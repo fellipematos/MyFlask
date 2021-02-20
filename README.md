@@ -3,7 +3,7 @@ Estrutura base para projetos Flask
 
 
 ##Start MyFlask
-> clone o repositorio
+> clone o repositorio<br />
 > abri o terminal
 > crie um ambiente virtual
     >$ python3 -m virtualenv -p python3 .venv
