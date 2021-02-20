@@ -1,0 +1,24 @@
+{% extends "bootstrap/base.html" %}
+
+{% block html_attribs %} lang="pt-BR"{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}">
+{% endblock %}
+
+{% block scripts %}
+<script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+{{super()}}
+{% endblock %}
+
+{% block title %}MyFlask{% endblock %}
+
+{% block navbar %}
+    <h2>__menu__</h2>
+{% endblock %}
+
+{% block content %}
+  <h1>H!, MyFLASK</h1>
+{% endblock %}

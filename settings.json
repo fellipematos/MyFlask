@@ -1,0 +1,31 @@
+{
+    "default":{
+        "DEBUG": false,
+        "FLASK_ADMIN_SWATCH": "cerulean",
+        "ADMIN_NAME": "MyFlask",
+        "EXTENSIONS": [
+            "myflask.ext.web:init_app",
+            "myflask.ext.style:init_app"
+        ]
+    },
+    
+    "development":{
+        "DEBUG": true,
+        "SQLALCHEMY_DATABASE_URI": "sqlite:///myflask.db",
+        "SQLALCHEMY_TRACK_MODIFICATIONS": false,
+        "DEBUG_TB_TEMPLATE_EDITOR_ENABLED": true,
+        "DEBUG_TB_PROFILER_ENABLED": true,
+        "DEBUG_TB_INTERCEPT_REDIRECTS": false,
+        "ADMIN_NAME": "MyFlask",
+        "EXTENSIONS": [
+            "myflask.ext.web:init_app",
+            "myflask.ext.style:init_app",
+            "myflask.ext.toolbar:init_app"
+        ]
+    },
+
+    "production":{
+        "SQLALCHEMY_TRACK_MODIFICATIONS": false,
+        "SQLALCHEMY_DATABASE_URI": "mysql://...."
+    }
+}
